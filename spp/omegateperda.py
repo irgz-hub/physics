@@ -16,7 +16,7 @@ delta = (2.*G_M**2 + (F-4.)*W_0**2)**2 - 4*(2.-F)*2.*W_0**4
 
 # aqui nao foi divido por W_P ainda devido ao calculo
 def wspp_te_func(beta):
-    return (np.sqrt((-(2.*beta*W_SPP**2 + (F-4.)*W_0**2)+np.sqrt((2.*beta*W_SPP**2 + (F-4.)*W_0**2)**2 - 4*(2.-F)*2.*W_0**4))/(2.*(2.-F))))
+    return (np.sqrt((-(2.*(beta*W_SPP)**2 + (F-4.)*W_0**2)+np.sqrt(((beta*W_SPP)**2 + (F-4.)*W_0**2)**2 - 4*(2.-F)*2.*W_0**4))/(2.*(2.-F))))
 # aqui foi divido por W_P
 
 
